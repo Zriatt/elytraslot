@@ -61,6 +61,7 @@ import top.theillusivec4.curiouselytra.integration.ICustomElytra;
 import top.theillusivec4.curiouselytra.integration.NetheritePlusElytra;
 import top.theillusivec4.curiouselytra.integration.SilentGearElytra;
 import top.theillusivec4.curiouselytra.integration.SpectralElytra;
+import top.theillusivec4.curiouselytra.integration.HDPEElytra;
 
 @Mod(CuriousElytra.MOD_ID)
 public class CuriousElytra {
@@ -77,6 +78,7 @@ public class CuriousElytra {
     INTEGRATIONS.put("netherite_plus", () -> NetheritePlusElytra::new);
     INTEGRATIONS.put("mana-and-artifice", () -> SpectralElytra::new);
     INTEGRATIONS.put("enderitemod", () -> EnderiteElytra::new);
+    INTEGRATIONS.put("mekanism", () -> HDPEElytra::new);
   }
 
   public CuriousElytra() {
